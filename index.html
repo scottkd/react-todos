@@ -4,6 +4,18 @@
     <title>Udacity Todos Goals</title>
 </head>
 <body>
+  <div>
+      <h1>Todo List</h1>
+      <input id="todo" type="text" placeholder="Add Todo" />
+      <button id="todoBtn">Add Todo</button>
+      <ul id="todos"></ul>
+  </div>
+  <div>
+      <h1>Goals</h1>
+      <input id="goal" type="text" placeholder="Add Goal" />
+      <button id="goalBtn">Add Todo</button>
+      <ul id="goals"></ul>
+  </div>
   <script type='text/javascript'>
     // Library Code
     function createStore(reducer) {
@@ -114,39 +126,39 @@
     })
 
 
-    store.dispatch(addTodoAction({
-      id: 0,
-      name: 'Walk the dog',
-      complete: false,
-    }))
-
-    store.dispatch(addTodoAction({
-      id: 1,
-      name: 'Wash the car',
-      complete: false,
-    }))
-
-    store.dispatch(addTodoAction({
-      id: 2,
-      name: 'Go to the gym',
-      complete: true,
-    }))
-
-    store.dispatch(removeTodoAction(1))
-
-    store.dispatch(toggleTodoAction(0))
-
-    store.dispatch(addGoalAction({
-      id: 0,
-      name: 'Learn Redux'
-    }))
-
-    store.dispatch(addGoalAction({
-      id: 1,
-      name: 'Lose 20 pounds'
-    }))
-
-    store.dispatch(removeGoalAction(0))
+    // store.dispatch(addTodoAction({
+    //   id: 0,
+    //   name: 'Walk the dog',
+    //   complete: false,
+    // }))
+    //
+    // store.dispatch(addTodoAction({
+    //   id: 1,
+    //   name: 'Wash the car',
+    //   complete: false,
+    // }))
+    //
+    // store.dispatch(addTodoAction({
+    //   id: 2,
+    //   name: 'Go to the gym',
+    //   complete: true,
+    // }))
+    //
+    // store.dispatch(removeTodoAction(1))
+    //
+    // store.dispatch(toggleTodoAction(0))
+    //
+    // store.dispatch(addGoalAction({
+    //   id: 0,
+    //   name: 'Learn Redux'
+    // }))
+    //
+    // store.dispatch(addGoalAction({
+    //   id: 1,
+    //   name: 'Lose 20 pounds'
+    // }))
+    //
+    // store.dispatch(removeGoalAction(0))
 
   </script>
 </body>
